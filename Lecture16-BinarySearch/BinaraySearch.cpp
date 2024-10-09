@@ -35,7 +35,7 @@ int Search(vector<int> nums ,int target){
 }
 int main(){
         vector<int> nums={-1 ,0,2,3,4,5,9,12};
-        int target =3;
+        int target =9;
         cout<<Search(nums ,target)<<endl;
         return 0;
 }

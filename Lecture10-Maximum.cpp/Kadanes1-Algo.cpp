@@ -8,7 +8,7 @@ using namespace std;
 //Time complexity of this program is Big O of n;
 int main(){
         int n=5;
-        int arr[n]={-1};
+        int arr[n]={1,2,23,3,4,5,1};
         int currentSum=0;
         int maxSum=0;
         for(int i=0;i<n;i++){

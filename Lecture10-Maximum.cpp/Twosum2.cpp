@@ -24,7 +24,7 @@ vector<int> pairSum(vector<int> nums ,int target){
 }
 int main(){
         vector<int> nums={3,2,4};
-        int target=9;
+        int target=6;
         vector<int> ans=pairSum(nums ,target);
 
         cout<<ans[0]<<" , "<<ans[1];

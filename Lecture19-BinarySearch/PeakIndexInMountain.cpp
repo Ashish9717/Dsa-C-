@@ -6,7 +6,10 @@ using namespace std;
 
 int PeakElement(vector<int> Arr){
         int n = Arr.size();
-        int left = 1 , right = n-2;
+        int left = 0 , right = n-1;
+        if(n == 1){
+                return 0;
+        }
 
         while(left <= right){
                 int mid = left + (right- left) / 2;
@@ -19,11 +22,11 @@ int PeakElement(vector<int> Arr){
                         right =mid - 1;
                 }
         }
-        return 0 ;
+        return left ;
 
 }
 int  main(){
-        vector<int> Arr ={3,5,3,2,0};
+        vector<int> Arr ={1,2};
         cout<<PeakElement(Arr)<< endl;
         return 0;
 }
